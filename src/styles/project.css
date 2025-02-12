@@ -1,0 +1,13 @@
+.p-1 {
+    color: #a47a07;
+  }
+  
+  nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* This helps the navbar appears as usual not hidden when you scroll down */
+  }
+body{
+    /* font-family: "Montserrat", serif; */
+}  
