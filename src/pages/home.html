@@ -4,6 +4,327 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="../styles/home.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body></body>
+  <body>
+    <nav class="bg-gray-300 shadow-lg">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16 font-[Open_Sans]">
+          <ul
+            class="hidden md:flex space-x-25 items-center w-full justify-center font-bold px-4 font-bold font-heading"
+          >
+            <li><a href="#" class="text-black hover:text-red-600">Home</a></li>
+            <li>
+              <a href="#" class="text-black hover:text-red-600">About</a>
+            </li>
+            <li>
+              <a href="#" class="text-black hover:text-red-600">Services</a>
+            </li>
+            <li>
+              <a href="#" class="text-black hover:text-red-600">Project</a>
+            </li>
+            <img
+              class="w-15 rounded-full"
+              src="https://static.vecteezy.com/system/resources/previews/007/796/631/non_2x/furniture-logo-furniture-logo-outline-free-vector.jpg"
+              alt=""
+            />
+            <li><a href="#" class="text-black hover:text-red-600">FAQ</a></li>
+            <li><a href="#" class="text-black hover:text-red-600">Blog</a></li>
+            <li><a href="#" class="text-black hover:text-red-600">Shop</a></li>
+            <li>
+              <a href="#" class="text-black hover:text-red-600">Contact</a>
+            </li>
+          </ul>
+          <button
+            type="button"
+            class="md:hidden text-black focus:outline-none"
+            id="menu-toggle"
+            title="Toggle Menu"
+          >
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div
+        class="md:hidden hidden flex flex-col bg-gray-300 space-y-2 p-4 font-bold"
+        id="mobile-menu"
+      >
+        <ul class="flex flex-col space-y-2">
+          <li><a href="#" class="text-black hover:text-red-600">Home</a></li>
+          <li><a href="#" class="text-black hover:text-red-600">About</a></li>
+          <li>
+            <a href="#" class="text-black hover:text-red-600">Services</a>
+          </li>
+          <li>
+            <a href="#" class="text-black hover:text-red-600">Project</a>
+          </li>
+          <li><a href="#" class="text-black hover:text-red-600">FAQ</a></li>
+          <li><a href="#" class="text-black hover:text-red-600">Blog</a></li>
+          <li><a href="#" class="text-black hover:text-red-600">Shop</a></li>
+          <li>
+            <a href="#" class="text-black hover:text-red-600">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div
+      class="bg-[url(../assets/images/p.jpg)] md:h-180 md:w-full bg-no-repeat bg-cover"
+    >
+      <div class="flex flex-col justify-center items-center h-full">
+        <div
+          class="hover:-translate-y-1 hover:scale-110 bg-gray-300 w-180 mt-60 mr-100 opacity-80 text-4xl font-bold leading-tight font-[Open_Sans]"
+        >
+          <h2>
+            The Oaks Project is Here <br />
+            A masterful blend of modern and traditional.
+          </h2>
+        </div>
+
+        <button
+          class="shadow-cyan-500/50 mt-2 mr-180 h-15 rounded-xl opacity-90 w-100 bg-blue-900 hover:-translate-y-1 hover:scale-110 ..."
+        >
+          <a href="#" class="text-3xl font-[Open_Sans] font-bold text-white"
+            >TAKE A PHOTO TOUR</a
+          >
+        </button>
+      </div>
+    </div>
+    <div class="bg-ni-weiss">
+      <div class="">
+        <h1 class="p-1 text-[40px] font-bold text-center mt-15 text-[#A47A07]">
+          About
+        </h1>
+        <p class="font-[Open_Sans] text-xl ml-15 mt-10">
+          Studio Interior Design Company is a multidisciplinary interior design
+          firm, lifestyle destination and design resource, and muse for
+          furnishings and homewares shop,Interior Design Company.
+        </p>
+      </div>
+      <div
+        class="flex flex-wrap justify-center items-center shrink-0 mx-auto gap-15 font-[Open_Sans] mt-15 grid-col-7"
+      >
+        <div class="mb-4 w-30 h-40">
+          <img
+            src="/interior-design/src/assets/images/p.jpg"
+            class="h-30 max-w-30 rounded-full transition duration-300 ease-in-out hover:scale-110"
+            alt=""
+          />
+
+          <p class="text-center mt-2 text-xl"><a href="">Services</a></p>
+        </div>
+        <div class="mb-4 w-30 h-40">
+          <img
+            src="/interior-design/src/assets/images/p.jpg"
+            class="h-30 max-w-30 rounded-full transition duration-300 ease-in-out hover:scale-110"
+            alt=""
+          />
+
+          <p class="text-center mt-2 text-xl"><a href="">Trends</a></p>
+        </div>
+        <div class="mb-4 w-30 h-40">
+          <img
+            src="/interior-design/src/assets/images/p.jpg"
+            class="h-30 max-w-30 rounded-full transition duration-300 ease-in-out hover:scale-110"
+            alt=""
+          />
+
+          <p class="text-center mt-2 text-xl"><a href="">Select</a></p>
+        </div>
+        <div class="mb-4 w-30 h-40">
+          <img
+            src="/interior-design/src/assets/images/p.jpg"
+            class="h-30 max-w-30 rounded-full transition duration-300 ease-in-out hover:scale-110"
+            alt=""
+          />
+
+          <p class="text-center mt-2 text-xl"><a href="">spring</a></p>
+        </div>
+        <div class="mb-4 w-30 h-40">
+          <img
+            src="/interior-design/src/assets/images/p.jpg"
+            class="h-30 max-w-30 rounded-full transition duration-300 ease-in-out hover:scale-110"
+            alt=""
+          />
+
+          <p class="text-center mt-2 text-xl"><a href="">For sale</a></p>
+        </div>
+        <div class="mb-4 w-30 h-40">
+          <img
+            src="/interior-design/src/assets/images/p.jpg"
+            class="h-30 max-w-30 rounded-full transition duration-300 ease-in-out hover:scale-110"
+            alt=""
+          />
+
+          <p class="text-center mt-2 text-xl"><a href="">About Us</a></p>
+        </div>
+        <div class="mb-4 w-30 h-40">
+          <img
+            src="/interior-design/src/assets/images/p.jpg"
+            class="h-30 max-w-30 rounded-full transition duration-300 ease-in-out hover:scale-110"
+            alt=""
+          />
+
+          <p class="text-center mt-2 text-xl"><a href="">FAQ</a></p>
+        </div>
+      </div>
+
+      <div class="xl:w-[1170px] mx-auto pb-16">
+        <!-- Latest Work Info -->
+        <div>
+          <div class="text-center mt-[50px]">
+            <p class="p-1 text-[40px] font-bold text-[#A47A07]">
+              Gallery section
+            </p>
+            <!-- <h2
+                class="text-ni-green-dunkel text-4xl font-alegreyaSans font-normal mb-3"
+               >
+               Most popular projects
+                 </h2> -->
+          </div>
+        </div>
+      </div>
+      <!-- Latest Work Image Cards -->
+      <div
+        class="flex flex-wrap justify-center items-center shrink-0 mx-auto gap-12 font-[Open_Sans]"
+      >
+        <div class="group relative max-w-[360px] overflow-hidden bg-[#02383A]">
+          <img
+            class="cursor-pointer transition duration-500 hover:scale-150 hover:opacity-50 h-[360px] w-[360px]"
+            src="https://images.prismic.io/luxdeco-dev/Mjc2NDExMGYtMTZkNC00MDE5LWI4MTItMzFhOGU5MGU5Zjdj_popular_interior_design_styles_-_top_interior_design_styles_-_luxdeco.com_4b2c7927-83ff-4f01-88f9-a544745bdf7f.jpg?auto=compress,format&w=1200&q=100&rect=0,0,1600,900"
+            alt="treppe"
+          />
+          <a
+            href="#"
+            class="hidden p-2 absolute top-[40%] right-[50%] translate-y-[40%] translate-x-[50%] border text-white group-hover:inline"
+            >Lorem Rocks</a
+          >
+        </div>
+        <div class="group relative max-w-[360px] overflow-hidden bg-[#02383A]">
+          <img
+            class="cursor-pointer transition duration-500 hover:scale-150 hover:opacity-50 h-[360px] w-[360px]"
+            src="https://foyr.com/learn/wp-content/uploads/2023/04/Art-Deco-Interior-Design-Style.webp"
+            alt="sofa"
+          />
+          <a
+            href="#"
+            class="hidden p-2 absolute top-[40%] right-[50%] translate-y-[40%] translate-x-[50%] border text-white group-hover:inline"
+            >Lorem Rocks</a
+          >
+        </div>
+        <div class="group relative max-w-[360px] overflow-hidden bg-[#02383A]">
+          <img
+            class="cursor-pointer transition duration-500 hover:scale-150 hover:opacity-50 h-[360px] w-[360px]"
+            src="https://en.idei.club/uploads/posts/2023-06/thumbs/1687313265_en-idei-club-p-realistic-interior-design-dizain-pinterest-42.jpg"
+            alt="kueche"
+          />
+          <a
+            href="#"
+            class="hidden p-2 absolute top-[40%] right-[50%] translate-y-[40%] translate-x-[50%] border text-white group-hover:inline"
+            >Lorem Rocks</a
+          >
+        </div>
+        <div class="group relative max-w-[360px] overflow-hidden bg-[#02383A]">
+          <img
+            class="cursor-pointer transition duration-500 hover:scale-150 hover:opacity-50 h-[360px] w-[360px]"
+            src="https://www.home-designing.com/wp-content/uploads/2018/04/Modern-dining-room-scheme.jpg"
+            alt="bett"
+          />
+          <a
+            href="#"
+            class="hidden p-2 absolute top-[40%] right-[50%] translate-y-[40%] translate-x-[50%] border text-white group-hover:inline"
+            >Lorem Rocks</a
+          >
+        </div>
+        <div class="group relative max-w-[360px] overflow-hidden bg-[#02383A]">
+          <img
+            class="cursor-pointer transition duration-500 hover:scale-150 hover:opacity-50 h-[360px] w-[360px]"
+            src="https://www.marthastewart.com/thmb/avoScmwRJSLhKHUiAM0nhsoQwS4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/interior-design-styles-midcentury-modern-getty-0623-4212409bc9dc4974809fb3f03e5cc350.jpg"
+            alt="stuhl"
+          />
+          <a
+            href="#"
+            class="hidden p-2 absolute top-[40%] right-[50%] translate-y-[40%] translate-x-[50%] border text-white group-hover:inline"
+            >Lorem Rocks</a
+          >
+        </div>
+        <div class="group relative max-w-[360px] overflow-hidden bg-[#02383A]">
+          <img
+            class="cursor-pointer transition duration-500 hover:scale-150 hover:opacity-50 h-[360px] w-[360px]"
+            src="https://www.marthastewart.com/thmb/avoScmwRJSLhKHUiAM0nhsoQwS4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/interior-design-styles-midcentury-modern-getty-0623-4212409bc9dc4974809fb3f03e5cc350.jpg"
+            alt="stuhl"
+          />
+          <a
+            href="#"
+            class="hidden p-2 absolute top-[40%] right-[50%] translate-y-[40%] translate-x-[50%] border text-white group-hover:inline"
+            >Lorem Rocks</a
+          >
+        </div>
+        <div class="group relative max-w-[360px] overflow-hidden bg-[#02383A]">
+          <img
+            class="cursor-pointer transition duration-500 hover:scale-150 hover:opacity-50 h-[360px] w-[360px]"
+            src="https://www.home-designing.com/wp-content/uploads/2018/04/Modern-dining-room-scheme.jpg"
+            alt="bett"
+          />
+          <a
+            href="#"
+            class="hidden p-2 absolute top-[40%] right-[50%] translate-y-[40%] translate-x-[50%] border text-white group-hover:inline"
+            >Lorem Rocks</a
+          >
+        </div>
+        <div class="group relative max-w-[360px] overflow-hidden bg-[#02383A]">
+          <img
+            class="cursor-pointer transition duration-500 hover:scale-150 hover:opacity-50 h-[360px] w-[360px]"
+            src="https://www.home-designing.com/wp-content/uploads/2018/04/Modern-dining-room-scheme.jpg"
+            alt="bett"
+          />
+          <a
+            href="#"
+            class="hidden p-2 absolute top-[40%] right-[50%] translate-y-[40%] translate-x-[50%] border text-white group-hover:inline"
+            >Lorem Rocks</a
+          >
+        </div>
+        <div class="group relative max-w-[360px] overflow-hidden bg-[#02383A]">
+          <img
+            class="cursor-pointer transition duration-500 hover:scale-150 hover:opacity-50 h-[360px] w-[360px]"
+            src="https://www.home-designing.com/wp-content/uploads/2018/04/Modern-dining-room-scheme.jpg"
+            alt="bett"
+          />
+          <a
+            href="#"
+            class="hidden p-2 absolute top-[40%] right-[50%] translate-y-[40%] translate-x-[50%] border text-white group-hover:inline"
+            >Lorem Rocks</a
+          >
+        </div>
+      </div>
+    </div>
+    <script>
+      document
+        .getElementById("menu-toggle")
+        .addEventListener("click", function () {
+          document.getElementById("mobile-menu").classList.toggle("hidden");
+        });
+    </script>
+  </body>
 </html>
