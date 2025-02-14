@@ -1,9 +1,256 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body></body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog</title>
+  <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+/>
+
+</head>
+
+<body>
+  <nav class="bg-gray-300 shadow-lg">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16 font-[Open_Sans]">
+        <ul class="hidden md:flex space-x-25 items-center w-full justify-center font-bold px-4 font-bold font-heading">
+          <li>
+            <a href="#" class="text-black hover:text-red-600">Home</a>
+          </li>
+          <li>
+            <a href="#" class="text-black hover:text-red-600">About</a>
+          </li>
+          <li>
+            <a href="#" class="text-black hover:text-red-600">Services</a>
+          </li>
+          <li>
+            <a href="#" class="text-black hover:text-red-600">Project</a>
+          </li>
+          <img class="w-15 rounded-full"
+            src="https://static.vecteezy.com/system/resources/previews/007/796/631/non_2x/furniture-logo-furniture-logo-outline-free-vector.jpg"
+            alt="" />
+          <li><a href="#" class="text-black hover:text-red-600">FAQ</a></li>
+          <li><a href="#" class="text-black hover:text-red-600">Blog</a></li>
+          <li><a href="#" class="text-black hover:text-red-600">Shop</a></li>
+          <li>
+            <a href="#" class="text-black hover:text-red-600">Contact</a>
+          </li>
+        </ul>
+        <button type="button" class="md:hidden text-black focus:outline-none" id="menu-toggle" title="Toggle Menu">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class="md:hidden hidden flex flex-col bg-gray-300 space-y-2 p-4 font-bold" id="mobile-menu">
+      <ul class="flex flex-col space-y-2">
+        <li><a href="#" class="text-black hover:text-red-600">Home</a></li>
+        <li><a href="#" class="text-black hover:text-red-600">About</a></li>
+        <li>
+          <a href="#" class="text-black hover:text-red-600">Services</a>
+        </li>
+        <li>
+          <a href="#" class="text-black hover:text-red-600">Project</a>
+        </li>
+        <li><a href="#" class="text-black hover:text-red-600">FAQ</a></li>
+        <li><a href="#" class="text-black hover:text-red-600">Blog</a></li>
+        <li><a href="#" class="text-black hover:text-red-600">Shop</a></li>
+        <li>
+          <a href="#" class="text-black hover:text-red-600">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <script>
+    document
+      .getElementById("menu-toggle")
+      .addEventListener("click", function () {
+        document.getElementById("mobile-menu").classList.toggle("hidden");
+      });
+  </script>
+
+<img src="../assets/images/home-image-design-new5.jpg" alt="" class="w-full object-cover">
+
+<div class="text p-5 md:p-10 text-center">
+  <p class="text-lg md:text-xl">Crafted Interiors</p>
+  <h1 class="text-3xl md:text-5xl font-bold text-yellow-500">Blog</h1>
+</div>
+
+
+  <div class="card">
+    <div class="card-luv p-5 flex flex-col md:flex-row gap-5 items-center">
+      <img src="../assets/images/blog-1.webp" class="object-cover w-full md:w-1/2 transition-transform duration-300 transform hover:scale-110 rounded-lg" alt="">
+      <div class="text px-5 text-center md:text-left">
+        <h1 class="text-2xl md:text-4xl font-bold">Enhance Your Interior with Us</h1>
+        <p class="text-base md:text-lg py-5">
+          Shared a peek inside Danish timber specialist Dinesen's Copenhagen showroom last summer,
+          but did you know that it also has...
+        </p>
+        <button class="bg-zinc-950 text-white px-5 py-2 rounded-md flex items-center gap-3 hover:bg-gray-800">
+          <svg class="w-6 h-6 text-red-50 hover:text-blue-500 transition-all duration-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 11l4-4m0 0l-4-4m4 4H7" />
+          </svg>
+          <a href="" class="hover:text-blue-500">Read More</a>
+        </button>
+      </div>
+    </div>
+    
+    <!-- Second Card -->
+    <div class="card-luv p-5 flex flex-col md:flex-row-reverse gap-5 items-center">
+      <img src="../assets/images/blog-2.jpeg" class="object-cover w-full md:w-1/2 transition-transform duration-300 transform hover:scale-110 rounded-lg" alt="">
+      <div class="text px-5 text-center md:text-right">
+        <h1 class="text-2xl md:text-4xl font-bold">History and Current Terms</h1>
+        <p class="text-base md:text-lg py-5">
+          In the past, interiors were put together instinctively as a part of the process of building. The profession of interior design has been a consequence of...
+        </p>
+        <button class="bg-zinc-950 text-white px-5 py-2 rounded-md flex justify-center md:justify-end items-center gap-3 hover:bg-gray-800">
+          <svg class="w-6 h-6 text-red-50 hover:text-blue-500 transition-all duration-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 11l4-4m0 0l-4-4m4 4H7" />
+          </svg>
+          <a href="" class="hover:text-blue-500">Read More</a>
+        </button>
+      </div>
+    </div>
+    
+    <div class="card-luv p-5 flex flex-col md:flex-row gap-5 items-center">
+      <img src="../assets/images/blog-3.jpg" class="object-cover w-full md:w-1/2 transition-transform duration-300 transform hover:scale-110 rounded-lg" alt="">
+      <div class="text px-5 text-center md:text-left">
+        <h1 class="text-2xl md:text-4xl font-bold">Enhance Your Interior with Us</h1>
+        <p class="text-base md:text-lg py-5">
+          Shared a peek inside Danish timber specialist Dinesen's Copenhagen showroom last summer,
+          but did you know that it also has...
+        </p>
+        <button class="bg-zinc-950 text-white px-5 py-2 rounded-md flex items-center gap-3 hover:bg-gray-800">
+          <svg class="w-6 h-6 text-red-50 hover:text-blue-500 transition-all duration-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 11l4-4m0 0l-4-4m4 4H7" />
+          </svg>
+          <a href="" class="hover:text-blue-500">Read More</a>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-[#001439] text-white">
+    <div
+      class="nikev py-10 px-5 md:px-10 flex flex-wrap md:flex-nowrap gap-10 justify-between"
+    >
+      <!-- Left Section: Logo & Mailing List -->
+      <div class="logo w-full md:w-1/3">
+        <img
+          src="../assets/images/logo.png"
+          class="w-40 md:w-60 h-auto"
+          alt="logo"
+        />
+        <h2 class="text-sky-50/85 text-[30px] md:text-[40px] mt-5">
+          Join Our Mailing List
+        </h2>
+        <div class="input mt-5">
+          <input
+            type="text"
+            placeholder="Enter your email"
+            class="w-full md:w-[110%] h-[50px] rounded-lg bg-sky-50 text-black text-[18px] px-5"
+          />
+        </div>
+      </div>
+
+      <!-- Right Section: Links -->
+      <div class="text w-full md:w-2/6 flex flex-wrap md:flex-nowrap gap-15">
+        <div class="text-left w-1/2 md:w-auto">
+          <h1 class="text-[30px] md:text-[40px]">Explore</h1>
+          <div class="link text-[18px] mt-5 space-y-2">
+            <a href="#"><p>Read</p></a>
+            <a href="#"><p>Watch</p></a>
+            <a href="#"><p>Shop</p></a>
+            <a href="#"><p>Studio</p></a>
+            <a href="#"><p>Portfolio</p></a>
+            <a href="#"><p>About</p></a>
+          </div>
+        </div>
+
+        <div class="text-left w-1/2 md:w-auto">
+          <h1 class="text-[30px] md:text-[40px]">Company</h1>
+          <div class="link text-[18px] mt-5 space-y-2">
+            <a href="#"><p>About Studio</p></a>
+            <a href="#"><p>Careers</p></a>
+            <a href="#"><p>Privacy Policy</p></a>
+            <a href="#"><p>Terms of Use</p></a>
+            <a href="#"><p>Contact Us</p></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Divider Line -->
+    <div class="line p-5">
+      <hr class="h-[3px] bg-white border-none mx-auto w-full" />
+    </div>
+
+    <!-- Social Icons -->
+    <div class="icon p-5 flex flex-wrap justify-center gap-5">
+      <!-- Facebook -->
+      <div
+        class="group bg-amber-500 w-16 h-16 md:w-20 md:h-20 rounded-full flex items-center justify-center transition-all duration-300 ease-in-out hover:bg-blue-500 hover:bg-black hover:bg-yellow-500 hover:bg-red-500 hover:bg-orange-500 hover:bg-sky-500"
+      >
+        <a
+          href="https://www.facebook.com"
+          class="text-blue-400 group-hover:text-white transition-all duration-300 ease-in-out"
+        >
+          <i
+            class="fab fa-facebook-f text-2xl md:text-3xl animate-none group-hover:animate-[spin_0.3s_linear_infinite]"
+          ></i>
+        </a>
+      </div>
+
+      <!-- Instagram -->
+      <div
+        class="group bg-amber-500 w-16 h-16 md:w-20 md:h-20 rounded-full flex items-center justify-center transition-all duration-300 ease-in-out hover:bg-blue-500 hover:bg-black hover:bg-yellow-500 hover:bg-red-500 hover:bg-orange-500 hover:bg-sky-500"
+      >
+        <a
+          href="https://www.instagram.com"
+          class="text-pink-500 group-hover:text-white transition-all duration-300 ease-in-out"
+        >
+          <i
+            class="fab fa-instagram text-2xl md:text-3xl animate-none group-hover:animate-[spin_0.3s_linear_infinite]"
+          ></i>
+        </a>
+      </div>
+
+      <!-- Twitter -->
+      <div
+        class="group bg-amber-500 w-16 h-16 md:w-20 md:h-20 rounded-full flex items-center justify-center transition-all duration-300 ease-in-out hover:bg-blue-500 hover:bg-black hover:bg-yellow-500 hover:bg-red-500 hover:bg-orange-500 hover:bg-sky-500"
+      >
+        <a
+          href="https://twitter.com"
+          class="text-blue-400 group-hover:text-white transition-all duration-300 ease-in-out"
+        >
+          <i
+            class="fab fa-twitter text-2xl md:text-3xl animate-none group-hover:animate-[spin_0.3s_linear_infinite]"
+          ></i>
+        </a>
+      </div>
+
+      <!-- YouTube -->
+      <div
+        class="group bg-amber-500 w-16 h-16 md:w-20 md:h-20 rounded-full flex items-center justify-center transition-all duration-300 ease-in-out hover:bg-blue-500 hover:bg-black hover:bg-yellow-500 hover:bg-red-500 hover:bg-orange-500 hover:bg-sky-500"
+      >
+        <a
+          href="https://www.youtube.com"
+          class="text-red-600 group-hover:text-white transition-all duration-300 ease-in-out"
+        >
+          <i
+            class="fab fa-youtube text-2xl md:text-3xl animate-none group-hover:animate-[spin_0.3s_linear_infinite]"
+          ></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>
