@@ -94,42 +94,163 @@
         </ul>
       </div>
     </nav>
-    <section
-      class="relative h-screen flex flex-col items-center justify-center text-center text-white"
+    <div class="mt-5 ml-20 text-[#A47A07] text-[35px] font-bold">
+      <h1>About Us</h1>
+    </div>
+    <div class="mt-2">
+      <video class="md:w-full md:h-150 object-cover" controls autoplay muted>
+        <source src="../assets/videos/about video.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <div
+      class="flex flex-wrap items-center justify-center md:justify-between p-6"
     >
-      <div
-        class="video-docker absolute top-0 left-0 w-full h-full overflow-hidden"
-      >
-        <video
-          class="min-w-full min-h-full absolute object-cover"
-          src=""
-          type="video/mp4"
-          autoplay
-          muted
-          loop
-        ></video>
+      <div class="mt-10 md:mt-20 h-auto w-full md:w-1/2 flex justify-center">
+        <img
+          class="h-110 w-[90%] md:max-w-[600px] object-cover rounded-xl transition duration-300 ease-in-out hover:scale-110"
+          src="../assets/images/about us.jpg"
+        />
       </div>
-      <div class="video-content space-y-2 z-10"></div>
-    </section>
+      <div
+        class="w-full md:w-1/2 mt-10 md:mt-10 text-center md:text-left px-4 md:px-10"
+      >
+        <h1
+          class="text-[22px] md:text-[25px] text-[#A47A07] font-bold transition duration-300 ease-in-out hover:scale-110"
+        >
+          Our mission is to Make Life Beautiful for ourselves and those around
+          us.
+        </h1>
+        <p
+          class="mt-5 text-base md:text-lg leading-8 text-justify font-[Open_Sans]"
+        >
+          Interior Design Company is a multi-disciplinary interior design firm
+          based in Salt Lake City, Utah, known for creating beautifully balanced
+          spaces that are both classic and current. In addition to our portfolio
+          of luxury design clients both domestic and international, Interior
+          Design Company creates thoughtful, guide-focused design and lifestyle
+          content for fans to replicate the Studio Interior Design Company
+          aesthetic on their own. The Netflix-based television series Dream Home
+          Makeover, two best-selling books, <i>Make Life Beautiful</i> and
+          <i>The Art of Home</i>, as well as partnerships with preeminent brands
+          including Target, Kohler, Ann Sacks, and MasterClass.
+        </p>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer class="bg-[#001439] text-white">
+      <div
+        class="nikev py-10 px-5 md:px-10 flex flex-wrap md:flex-nowrap gap-10 justify-between"
+      >
+        <!-- Left Section: Logo & Mailing List -->
+        <div class="logo w-full md:w-1/3">
+          <img
+            src="../assets/images/logo.png"
+            class="w-40 md:w-60 h-auto"
+            alt="logo"
+          />
+          <h2 class="text-sky-50/85 text-[30px] md:text-[40px] mt-5">
+            Join Our Mailing List
+          </h2>
+          <div class="input mt-5">
+            <input
+              type="text"
+              placeholder="Enter your email"
+              class="w-full md:w-[110%] h-[50px] rounded-lg bg-sky-50 text-black text-[18px] px-5"
+            />
+          </div>
+        </div>
 
-    <style>
-      .video-docker video {
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-      }
+        <!-- Right Section: Links -->
+        <div class="text w-full md:w-2/6 flex flex-wrap md:flex-nowrap gap-15">
+          <div class="text-left w-1/2 md:w-auto">
+            <h1 class="text-[30px] md:text-[40px]">Explore</h1>
+            <div class="link text-[18px] mt-5 space-y-2">
+              <a href="#"><p>Read</p></a>
+              <a href="#"><p>Watch</p></a>
+              <a href="#"><p>Shop</p></a>
+              <a href="#"><p>Studio</p></a>
+              <a href="#"><p>Portfolio</p></a>
+              <a href="#"><p>About</p></a>
+            </div>
+          </div>
 
-      .video-docker::after {
-        content: "";
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
+          <div class="text-left w-1/2 md:w-auto">
+            <h1 class="text-[30px] md:text-[40px]">Company</h1>
+            <div class="link text-[18px] mt-5 space-y-2">
+              <a href="#"><p>About Studio</p></a>
+              <a href="#"><p>Careers</p></a>
+              <a href="#"><p>Privacy Policy</p></a>
+              <a href="#"><p>Terms of Use</p></a>
+              <a href="#"><p>Contact Us</p></a>
+            </div>
+          </div>
+        </div>
+      </div>
 
-        z-index: 1;
-      }
-    </style>
+      <!-- Divider Line -->
+      <div class="line p-5">
+        <hr class="h-[3px] bg-white border-none mx-auto w-full" />
+      </div>
+
+      <!-- Social Icons -->
+      <div class="icon p-5 flex flex-wrap justify-center gap-5">
+        <!-- Facebook -->
+        <div
+          class="group bg-amber-500 w-16 h-16 md:w-20 md:h-20 rounded-full flex items-center justify-center transition-all duration-300 ease-in-out hover:bg-blue-500 hover:bg-black hover:bg-yellow-500 hover:bg-red-500 hover:bg-orange-500 hover:bg-sky-500"
+        >
+          <a
+            href="https://www.facebook.com"
+            class="text-blue-400 group-hover:text-white transition-all duration-300 ease-in-out"
+          >
+            <i
+              class="fab fa-facebook-f text-2xl md:text-3xl animate-none group-hover:animate-[spin_0.3s_linear_infinite]"
+            ></i>
+          </a>
+        </div>
+
+        <!-- Instagram -->
+        <div
+          class="group bg-amber-500 w-16 h-16 md:w-20 md:h-20 rounded-full flex items-center justify-center transition-all duration-300 ease-in-out hover:bg-blue-500 hover:bg-black hover:bg-yellow-500 hover:bg-red-500 hover:bg-orange-500 hover:bg-sky-500"
+        >
+          <a
+            href="https://www.instagram.com"
+            class="text-pink-500 group-hover:text-white transition-all duration-300 ease-in-out"
+          >
+            <i
+              class="fab fa-instagram text-2xl md:text-3xl animate-none group-hover:animate-[spin_0.3s_linear_infinite]"
+            ></i>
+          </a>
+        </div>
+
+        <!-- Twitter -->
+        <div
+          class="group bg-amber-500 w-16 h-16 md:w-20 md:h-20 rounded-full flex items-center justify-center transition-all duration-300 ease-in-out hover:bg-blue-500 hover:bg-black hover:bg-yellow-500 hover:bg-red-500 hover:bg-orange-500 hover:bg-sky-500"
+        >
+          <a
+            href="https://twitter.com"
+            class="text-blue-400 group-hover:text-white transition-all duration-300 ease-in-out"
+          >
+            <i
+              class="fab fa-twitter text-2xl md:text-3xl animate-none group-hover:animate-[spin_0.3s_linear_infinite]"
+            ></i>
+          </a>
+        </div>
+
+        <!-- YouTube -->
+        <div
+          class="group bg-amber-500 w-16 h-16 md:w-20 md:h-20 rounded-full flex items-center justify-center transition-all duration-300 ease-in-out hover:bg-blue-500 hover:bg-black hover:bg-yellow-500 hover:bg-red-500 hover:bg-orange-500 hover:bg-sky-500"
+        >
+          <a
+            href="https://www.youtube.com"
+            class="text-red-600 group-hover:text-white transition-all duration-300 ease-in-out"
+          >
+            <i
+              class="fab fa-youtube text-2xl md:text-3xl animate-none group-hover:animate-[spin_0.3s_linear_infinite]"
+            ></i>
+          </a>
+        </div>
+      </div>
+    </footer>
     <script>
       document
         .getElementById("menu-toggle")
