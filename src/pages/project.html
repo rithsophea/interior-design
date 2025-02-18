@@ -1,9 +1,725 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body></body>
+<head>
+<title>My first Tailwind CSS project</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<link rel="stylesheet" href="../styles/project.css">
+<script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Sen:wght@400..800&display=swap" rel="stylesheet">
+</head>
+  <body class="bg-gray-100 ">
+    <nav class="bg-gray-300 shadow-lg">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16 font-[Open_Sans]">
+          <ul
+            class="hidden md:flex space-x-25 items-center w-full justify-center font-bold px-4 font-bold font-heading"
+          >
+            <li><a href="home.html" class="text-black hover:text-red-600">Home</a></li>
+            <li>
+              <a href="#" class="text-black hover:text-red-600">About</a>
+            </li>
+            <li>
+              <a href="#" class="text-black hover:text-red-600">Services</a>
+            </li>
+            <li>
+              <a href="#" class="text-black hover:text-red-600">Project</a>
+            </li>
+            <img
+              class="w-15 rounded-full"
+              src="https://static.vecteezy.com/system/resources/previews/007/796/631/non_2x/furniture-logo-furniture-logo-outline-free-vector.jpg"
+              alt=""
+            />
+            <li><a href="#" class="text-black hover:text-red-600">FAQ</a></li>
+            <li><a href="#" class="text-black hover:text-red-600">Blog</a></li>
+            <li><a href="#" class="text-black hover:text-red-600">Shop</a></li>
+            <li>
+              <a href="contact.html" class="text-black hover:text-red-600">Contact</a>
+            </li>
+          </ul>
+          <button
+            type="button"
+            class="md:hidden text-black focus:outline-none"
+            id="menu-toggle"
+            title="Toggle Menu"
+          >
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div
+        class="md:hidden hidden flex flex-col bg-gray-300 space-y-2 p-4 font-bold"
+        id="mobile-menu"
+      >
+        <ul class="flex flex-col space-y-2">
+          <li><a href="#" class="text-black hover:text-red-600">Home</a></li>
+          <li><a href="#" class="text-black hover:text-red-600">About</a></li>
+          <li>
+            <a href="#" class="text-black hover:text-red-600">Services</a>
+          </li>
+          <li>
+            <a href="#" class="text-black hover:text-red-600">Project</a>
+          </li>
+          <li><a href="#" class="text-black hover:text-red-600">FAQ</a></li>
+          <li><a href="#" class="text-black hover:text-red-600">Blog</a></li>
+          <li><a href="#" class="text-black hover:text-red-600">Shop</a></li>
+          <li>
+            <a href="#" class="text-black hover:text-red-600">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+</body>
+    <div class="relative h-[447px] lg:h-[810px]">
+      <img
+        class="h-full w-full object-cover"
+        src="https://images.pexels.com/photos/1571459/pexels-photo-1571459.jpeg?cs=srgb&dl=pexels-fotoaibe-1571459.jpg&fm=jpg"
+        alt="header"
+      />
+      <section
+        class="hero absolute top-[30%] right-[50%] translate-y-[30%] translate-x-[50%] lg:top-[40%] lg:right-[50%] lg:translate-y-[50%] lg:translate-x-[50%]"
+      >
+        <h1
+          class="text-[40px] lg:text-[56px] text-white font-nixie font-[Open_Sans] text-center whitespace-nowrap"
+        >
+          SLIM& STYLISH
+        </h1>
+        <h2 class="text-[22.4px] text-ni-weiss-50 font-alegreya text-center">
+          Modern Design & Competent Service.
+        </h2>
+      </section>
+    </div>
+  <main>
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                                  ABOUT                                  -->
+    <!-- ----------------------------------------------------------------------- -->
+    <section class="bg-ni-weiss">
+      <div class="xl:w-[1170px] mx-auto pb-16">
+        <!-- Latest Work Info -->
+        <div
+          >
+          <div class="text-center mt-[50px]">
+            <p class="p-1 text-[40px] font-bold">Most popular projects</p>
+             <!-- <h2
+                class="text-ni-green-dunkel text-4xl font-alegreyaSans font-normal mb-3"
+               >
+               Most popular projects
+                 </h2> -->
+                  <p class="text-xl">Welcome to our company! We provide the best interior design services, transforming spaces with creativity, elegance, functionality.</p>
+                 </div>
+          </div>
+        </div>
+        <!-- Latest Work Image Cards -->
+        <div
+          class="flex flex-wrap justify-center items-center shrink-0 mx-auto gap-8"
+        >
+          <div
+            class="group relative max-w-[360px] overflow-hidden bg-[#02383A]"
+          >
+            <img
+              class="cursor-pointer transition duration-500 hover:scale-150 hover:opacity-50 h-[360px] w-[360px] object-cover"
+              src="https://images.prismic.io/luxdeco-dev/Mjc2NDExMGYtMTZkNC00MDE5LWI4MTItMzFhOGU5MGU5Zjdj_popular_interior_design_styles_-_top_interior_design_styles_-_luxdeco.com_4b2c7927-83ff-4f01-88f9-a544745bdf7f.jpg?auto=compress,format&w=1200&q=100&rect=0,0,1600,900"
+              alt="treppe"
+            />
+            <!-- <div class="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center text-white text-lg font-bold transform -translate-y-full group-hover:translate-y-0 transition-transform duration-500">   
+              <h1 class="">
+                 New arrival
+                 </h1>
+             </div> -->
+            <a
+              href="#"
+              class="hidden p-2 absolute top-[40%] right-[50%] translate-y-[40%] translate-x-[50%] border text-white group-hover:inline"
+              >Lorem Rocks</a
+            >
+          </div>
+          <div
+            class="group relative max-w-[360px] overflow-hidden bg-[#02383A]"
+          >
+            <img
+              class="cursor-pointer transition duration-500 hover:scale-150 hover:opacity-50 h-[360px] w-[360px]"
+              src="https://foyr.com/learn/wp-content/uploads/2023/04/Art-Deco-Interior-Design-Style.webp"
+              alt="sofa"
+            />
+            <a
+              href="#"
+              class="hidden p-2 absolute top-[40%] right-[50%] translate-y-[40%] translate-x-[50%] border text-white group-hover:inline"
+              >Lorem Rocks</a
+            >
+          </div>
+          <div
+            class="group relative max-w-[360px] overflow-hidden bg-[#02383A]"
+          >
+            <img
+              class="cursor-pointer transition duration-500 hover:scale-150 hover:opacity-50 h-[360px] w-[360px]"
+              src="https://en.idei.club/uploads/posts/2023-06/thumbs/1687313265_en-idei-club-p-realistic-interior-design-dizain-pinterest-42.jpg"
+              alt="kueche"
+            />
+            <a
+              href="#"
+              class="hidden p-2 absolute top-[40%] right-[50%] translate-y-[40%] translate-x-[50%] border text-white group-hover:inline"
+              >Lorem Rocks</a
+            >
+          </div>
+          <div
+            class="group relative max-w-[360px] overflow-hidden bg-[#02383A]"
+          >
+            <img
+              class="cursor-pointer transition duration-500 hover:scale-150 hover:opacity-50 h-[360px] w-[360px]"
+              src="https://www.home-designing.com/wp-content/uploads/2018/04/Modern-dining-room-scheme.jpg"
+              alt="bett"
+            />
+            <a
+              href="#"
+              class="hidden p-2 absolute top-[40%] right-[50%] translate-y-[40%] translate-x-[50%] border text-white group-hover:inline"
+              >Lorem Rocks</a
+            >
+          </div>
+          <div
+            class="group relative max-w-[360px] overflow-hidden bg-[#02383A]"
+          >
+            <img
+              class="cursor-pointer transition duration-500 hover:scale-150 hover:opacity-50 h-[360px] w-[360px]"
+              src="https://www.marthastewart.com/thmb/avoScmwRJSLhKHUiAM0nhsoQwS4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/interior-design-styles-midcentury-modern-getty-0623-4212409bc9dc4974809fb3f03e5cc350.jpg"
+              alt="stuhl"
+            />
+            <a
+              href="#"
+              class="hidden p-2 absolute top-[40%] right-[50%] translate-y-[40%] translate-x-[50%] border text-white group-hover:inline"
+              >Lorem Rocks</a
+            >
+          </div>
+          <div
+            class="group relative max-w-[360px] overflow-hidden bg-[#02383A]"
+          >
+            <img
+              class="cursor-pointer transition duration-500 hover:scale-150 hover:opacity-50 h-[360px] w-[360px]"
+              src="https://images.squarespace-cdn.com/content/v1/556764ece4b0548a271711fa/26153a89-9176-45d4-bc5a-466bfda7cd6d/SBD-verdugo-mtns-6.jpg"
+              alt="home"
+            />
+            <a
+              href="#"
+              class="hidden p-2 absolute top-[40%] right-[50%] translate-y-[40%] translate-x-[50%] border text-white group-hover:inline"
+              >Lorem Rocks</a
+            >
+          </div>
+          <div
+          class="group relative max-w-[360px] overflow-hidden bg-[#02383A]"
+        >
+          <img
+            class="cursor-pointer transition duration-500 hover:scale-150 hover:opacity-50 h-[360px] w-[360px]"
+            src="https://www.marthastewart.com/thmb/avoScmwRJSLhKHUiAM0nhsoQwS4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/interior-design-styles-midcentury-modern-getty-0623-4212409bc9dc4974809fb3f03e5cc350.jpg"
+            alt="stuhl"
+          />
+          <a
+            href="#"
+            class="hidden p-2 absolute top-[40%] right-[50%] translate-y-[40%] translate-x-[50%] border text-white group-hover:inline"
+            >Lorem Rocks</a
+          >
+        </div>
+        <div
+          class="group relative max-w-[360px] overflow-hidden bg-[#02383A]"
+        >
+          <img
+            class="cursor-pointer transition duration-500 hover:scale-150 hover:opacity-50 h-[360px] w-[360px]"
+            src="https://images.squarespace-cdn.com/content/v1/556764ece4b0548a271711fa/26153a89-9176-45d4-bc5a-466bfda7cd6d/SBD-verdugo-mtns-6.jpg"
+            alt="home"
+          />
+          <a
+            href="#"
+            class="hidden p-2 absolute top-[40%] right-[50%] translate-y-[40%] translate-x-[50%] border text-white group-hover:inline"
+            >Lorem Rocks</a
+          >
+        </div>
+        </div>
+    </section>
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                                SERVICES                                 -->
+    <!-- ----------------------------------------------------------------------- -->
+    <section class="services mt-[50px]">
+      <div
+        class="relative w-full h-[958px] md:h-[838px] lg:h-[542px] xl:h-[800px]"
+      >
+        <div
+          style="
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-image: url(https://vevano.com/cdn/shop/articles/jose-soriano-cyX48XZiwMA-unsplash.jpg?v=1657031094);
+          "
+          class="w-full h-full object-cover bg-no-repeat xl:object-center"
+        ></div>
+        <div
+          class="services-cards flex flex-col items-center gap-16 justify-evenly absolute h-[80%] w-[100%] top-[10%] md:w-[96%] md:right-[2%] md:left-[2%] xl:w-[80%] xl:h-[80%] xl:right-[10%] xl:left-[10%] bg-black opacity-50 rounded-xl"
+        >
+          <div class="flex flex-col items-center justify-center gap-2 ">
+            <p class="text-white text-[40px] font-bold">Our services</p>
+            <!-- <h3 class="text-white text-[40px] font-alegreyaSans font-medium">
+              Our services
+            </h3> -->
+            <p class="text-white text-center text-xl">
+              "Transforming Spaces with Elegance: Premium Interior Design Services for Stylish and Functional Living Environments. Our expert designers craft personalized, luxurious spaces that seamlessly combine comfort, style, and functionality, tailored to your unique vision and needs."
+            </p>
+          </div>
+          <div
+            class="flex flex-col lg:flex-row gap-12 items-center justify-center"
+          >
+            <div class="flex flex-col items-center w-[90%] h-[90%]">
+              
+              <h3
+                class="text-white text-[30px] font-alegreyaSans font-medium"
+              >
+                Concepts
+              </h3>
+              <p class="text-white text-center text-[14px]">
+                "Elevate Your Space: Expert Interior Design for Stunning and Functional Home & Office Interiors. Transform any room with creative, personalized designs that blend style, comfort, and efficiency.
+              </p>
+            </div>
+            <div class="flex flex-col items-center w-[90%] h-[90%]">
+              
+              <h3
+                class="text-white text-[30px] font-alegreyaSans font-medium"
+              >
+                Colors
+              </h3>
+              <p class="text-white text-center text-[14px]">
+                "Creating Beautiful Interiors: Innovative Design Solutions for Modern, Elegant, and Timeless Spaces. Transform your home or office with bespoke designs that blend functionality and style.
+              </p>
+            </div>
+            <div class="flex flex-col items-center w-[90%] h-[90%]">
+             
+              <h3
+                class="text-white text-[30px] font-alegreyaSans font-medium"
+              >
+                Illustration
+              </h3>
+              <p class="text-white text-center text-[14px]">
+                "Luxury Interior Design: Transforming Homes and Offices with Style, Elegance, and Functionality. Our designs blend premium materials, impeccable craftsmanship, and personalized details to create stunning spaces.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                                  BLOG                                   -->
+    <!-- ----------------------------------------------------------------------- -->
+
+    <section>
+      <div class="text-center mt-[50px]">
+        <p class="p-1 text-[40px] font-bold">Our discount projects</p>
+        <p class="text-xl p-[40px]">"Exclusive Discount Projects: Affordable Interior Design Solutions with Premium Quality, Elegance, and Style for Homes and Commercial Spaces. Experience exceptional design, expert craftsmanship, and tailored solutions that elevate any environment."
+        </p>
+      </div>
+    </section>
+     <section class="bg-ni-weiss mt-[-50px]">
+      <div class="xl:w-[1170px] mx-auto pb-16">
+        <!-- Latest Work Info -->
+         <div
+          class="flex justify-around min-[1142px]:justify-between items-center py-16 px-2"
+        >
+        
+        </div> 
+        <!-- Latest Work Image Cards -->
+        <div
+          class="flex flex-wrap justify-center items-start shrink-0 mx-auto gap-8"
+        >
+          <div class="group relative max-w-[360px]">
+            <img
+              class="cursor-pointer transition duration-500 hover:scale-150 h-[200px] w-[360px]"
+              src="https://cdn.msisurfaces.com/images/roomscenes/medium/lanston-oak-i.jpg"
+              alt="treppe"
+            />
+
+            <div>
+              <h4
+                class="text-ni-green-dunkel text-3xl font-alegreya font-medium mt-2 mb-2"
+              >
+              Savings
+              </h4>
+              <p
+                class="text-[14px] text-ni-grau-dunkel font-light italic mb-2"
+              >
+                3 Nov, 2014
+              </p>
+              <p class="text-[14px]  mb-2">
+                Enjoy incredible discounts on our interior design projects, bringing luxury and style to your space at an unbeatable price. Transform your home or office with elegance, comfort, and functionality.
+              </p>
+              <a
+                class="text-[14px] text-ni-blau font-light mb-2 hover:underline"
+                href="#"
+                >Read More</a
+              >
+            </div>
+          </div>
+          <div class="group relative max-w-[360px]">
+            <img
+              class="cursor-pointer transition duration-500 hover:scale-150 h-[200px] w-[360px]"
+              src="https://designfor-me.com/wp-content/uploads/2023/09/Interior-Designers-who-use-colour.jpeg"
+              alt="sofa"
+            />
+            <div>
+              <h4
+                class="text-ni-green-dunkel text-3xl font-alegreya font-medium mt-2 mb-2"
+              >
+              Deals
+              </h4>
+              <p
+                class="text-[14px] text-ni-grau-dunkel font-light italic mb-2"
+              >
+                3 Nov, 2014
+              </p>
+              <p class="text-[14px] mb-2">
+                Take advantage of our special offers on premium interior design services, ensuring affordability while maintaining exceptional quality, style, and personalized attention to detail for every space.
+              </p>
+              <a
+                class="text-[14px] text-ni-blau font-light mb-2 hover:underline"
+                href="#"
+                >Read More</a
+              >
+            </div>
+          </div>
+          <div class="group relative max-w-[360px]">
+            <img
+              class="cursor-pointer transition duration-500 hover:scale-150 h-[200px] w-[360px]"
+              src="https://s.alicdn.com/@sc04/kf/U56012a70b18d42b8bd138e26cd2b976cx.jpg_720x720q50.jpg"
+              alt="kueche"
+            />
+            <div>
+              <h4
+                class="text-ni-green-dunkel text-3xl font-alegreya font-medium mt-2 mb-2"
+              >
+              Offers
+              </h4>
+              <p
+                class="text-[14px] text-ni-grau-dunkel font-light italic mb-2"
+              >
+                3 Nov, 2014
+              </p>
+              <p class="text-[14px] mb-2">
+                Exclusive limited-time offers on stunning interior transformations, allowing you to achieve a beautifully designed home or office with elegance, functionality, and personalized touches that reflect your unique style.
+              </p>
+              <a
+                class="text-[14px] text-ni-blau font-light mb-2 hover:underline"
+                href="#"
+                >Read More</a
+              >
+            </div>
+          </div>
+          </div>
+        </div>
+    </section>
+    <!--Another section of three images-->
+    <section>
+      <section class="bg-ni-weiss mt-[-50px]">
+      <div class="xl:w-[1170px] mx-auto pb-16">
+        <!-- Latest Work Info -->
+         <div
+          class="flex justify-around min-[1142px]:justify-between items-center py-16 px-2"
+        >
+        
+        </div> 
+        <!-- Latest Work Image Cards -->
+        <div
+          class="flex flex-wrap justify-center items-start shrink-0 mx-auto gap-8"
+        >
+          <div class="group relative max-w-[360px]">
+            <img
+              class="cursor-pointer transition duration-500 hover:scale-150 h-[200px] w-[360px]"
+              src="https://www.rentmoi.com/wp-content/uploads/2018/10/splash-one-villa-float-in-the-pool-of-a-gorgeous-villa-0.jpg"
+              alt="treppe"
+            />
+
+            <div>
+              <h4
+                class="text-ni-green-dunkel text-3xl font-alegreya font-medium mt-2 mb-2"
+              >
+              Discounts
+              </h4>
+              <p
+                class="text-[14px] text-ni-grau-dunkel font-light italic mb-2"
+              >
+                3 Dec, 2017
+              </p>
+              <p class="text-[14px] mb-2">
+                Unlock amazing discounts on our expert interior design services, helping you create stylish, functional, and personal spaces that reflect your unique taste and elevate every room's atmosphere.</p>
+              <a
+                class="text-[14px] text-ni-blau font-light mb-2 hover:underline"
+                href="#"
+                >Read More</a
+              >
+            </div>
+          </div>
+          <div class="group relative max-w-[360px]">
+            <img
+              class="cursor-pointer transition duration-500 hover:scale-150 h-[200px] w-[360px]"
+              src="https://www.spirittileandstone.com/wp-content/uploads/2021/10/domestic.jpg"
+              alt="sofa"
+            />
+            <div>
+              <h4
+                class="text-ni-green-dunkel text-3xl font-alegreya font-medium mt-2 mb-2"
+              >
+              Promotions
+              </h4>
+              <p
+                class="text-[14px] text-ni-grau-dunkel font-light italic mb-2"
+              >
+                7 Jun, 2019
+              </p>
+              <p class="text-[14px] mb-2">
+                Explore our latest promotions on high-end interior designs, providing you with cost-effective solutions to upgrade. add 10 more words
+              </p>
+              <a
+                class="text-[14px] text-ni-blau font-light mb-2 hover:underline"
+                href="#"
+                >Read More</a
+              >
+            </div>
+          </div>
+          <div class="group relative max-w-[360px]">
+            <img
+              class="cursor-pointer transition duration-500 hover:scale-150 h-[200px] w-[360px]"
+              src="https://www.buildingmaterialreporter.com/uploads/blogs/files/image-20240816104534-5.jpeg"
+              alt="kueche"
+            />
+            <div>
+              <h4
+                class="text-ni-green-dunkel text-3xl font-alegreya font-medium mt-2 mb-2"
+              >
+              SavingsPlan
+              </h4>
+              <p
+                class="text-[14px] text-ni-grau-dunkel font-light italic mb-2"
+              >
+                9 Jan, 2018
+              </p>
+              <p class="text-[14px] mb-2">
+                Our budget-friendly design solutions offer significant savings while delivering breathtaking interiors that enhance aesthetics, functionality, and comfort, tailored to your specific style and needs.
+              </p>
+              <a
+                class="text-[14px] text-ni-blau font-light mb-2 hover:underline"
+                href="#"
+                >Read More</a
+              >
+            </div>
+          </div>
+    </section>
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                                 SLOGAN                                  -->
+    <!-- ----------------------------------------------------------------------- -->
+    <section>
+      <div
+        class="relative bg-fixed w-full h-[622px] md:h-[464px] xl:h-[385px] mx-auto flex flex-col items-center justify-center"
+        style="background-image: url(https://images2.alphacoders.com/134/1347182.png)"
+      >
+        <div
+          class="flex flex-col items-center gap-2 justify-evenly absolute h-[80%] w-[80%] top-[10%] md:w-[96%] md:right-[2%] md:left-[2%] xl:w-[80%] xl:h-[80%] xl:right-[10%] xl:left-[10%] bg-black opacity-50 rounded-xl"
+        >
+          <h3
+            class="text-white text-[26px] text-center font-alegreyaSans font-light"
+          >
+          "Great design is not just about beauty, it’s about creating spaces that inspire, uplift, and function perfectly, blending style with comfort to reflect your unique personality and elevate every moment spent within."
+          </h3>
+          <a
+            class="cursor-pointer text-white text-center border p-2 border-white text-[14px] hover:text-ni-green-dunkel hover:bg-white"
+          >
+            Get a free quote
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                              TESTIMONIALS                               -->
+    <!-- ----------------------------------------------------------------------- -->
+    <section class="bg-ni-weiss">
+      <div class="xl:w-[1170px] mx-auto pb-16">
+        <!-- Testiminoals Heading -->
+        <div
+          class="flex flex-col justify-around min-[1142px]:justify-between items-center py-16 px-16"
+        >
+          <div>
+            <p class="p-1 text-[40px] font-bold text-center">Testimonials</p>
+            <!-- <h2
+              class="text-ni-green-dunkel text-4xl text-center font-alegreyaSans font-normal mb-3"
+            >
+              Testimonials
+            </h2> -->
+            <!-- <p class="text-sm text-center">
+              Some happy customers have to say.
+            </p> -->
+            <p class="text-xl text-center">"Working with this company was an outstanding experience! Their innovative interior design solutions transformed our corporate space into a stylish, functional, and inspiring environment. Highly recommended for anyone seeking exceptional design services!"</p>
+          </div>
+          <div
+            class="pt-16 flex flex-col lg:flex-row justify-center items-center gap-2"
+          >
+            <div
+              class="pt-16 flex flex-col justify-center items-center gap-2"
+            >
+              <img class="h-20 mx-auto object-cover rounded-full w-20"
+                src="https://preview.redd.it/sanemi-if-he-never-became-a-demon-slayer-lost-his-family-v0-a14e99hlujcd1.jpg?width=640&crop=smart&auto=webp&s=8ad3402941c6e6b83ca95a63bdf6206a14576592"
+                alt="person1"
+              />
+              <p
+                class="text-center w-[90%] text-ni-grau-dunkel text-sm mb-2 mt-2"
+              >
+              A visionary interior designer known for her 
+              innovative use of color and texture, Emma 
+              transforms ordinary spaces
+              </p>
+              <h5 class="text-ni-green-dunkel text-sm text-center font-bold">
+                Jhon Doe
+              </h5>
+              <h6 class="text-sm text-ni-grau-dunkel">
+                Head of Ideas, Technext
+              </h6>
+            </div>
+            <div
+              class="pt-16 flex flex-col justify-center items-center gap-2"
+            >
+              <img class="h-20 mx-auto object-cover rounded-full w-20"
+                src="https://images4.alphacoders.com/136/1362343.png"
+                alt="person1"
+              />
+              <p
+                class="text-center w-[90%] text-ni-grau-dunkel text-sm mb-2 mt-2"
+              >
+              A visionary interior designer known for her 
+              innovative use of color and texture, Emma 
+              transforms ordinary spaces
+              </p>
+              <h5 class="text-ni-green-dunkel text-sm text-center font-bold">
+                Jane Doe
+              </h5>
+              <h6 class="text-sm text-ni-grau-dunkel">CEO, Apple Inc</h6>
+            </div>
+            <div
+              class="pt-16 flex flex-col justify-center items-center gap-2"
+            >
+              <img class="h-20 mx-auto object-cover rounded-full w-20"
+                src="https://cdn.shopify.com/s/files/1/0046/2779/1960/files/tanjiro_demon_slayer_480x480.jpg?v=1640264001"
+                alt="person1"
+              />
+              <p
+                class="text-center w-[90%] text-ni-grau-dunkel text-sm mb-2 mt-2"
+              >
+              A visionary interior designer known for her 
+              innovative use of color and texture, Emma 
+              transforms ordinary spaces
+              </p>
+              <h5 class="text-ni-green-dunkel text-sm text-center font-bold">
+                Albert Doe
+              </h5>
+              <h6 class="text-sm text-ni-grau-dunkel">
+                Team Lead, Design Studio
+              </h6>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                                 FOOTER                                  -->
+    <!-- ----------------------------------------------------------------------- -->
+     <!-- Footer section with social media icons and newsletter sign-up -->
+     <footer class="bg-[#001439] text-white">
+      <div class="nikev py-10 px-5 md:px-10 flex flex-wrap md:flex-nowrap gap-10 justify-between">
+    <!-- Left Section: Logo & Mailing List -->
+      <div class="logo w-full md:w-1/3">
+        <img src="../assets/images/logo.png" class="w-40 md:w-60 h-auto" alt="logo" />
+        <h2 class="text-sky-50/85 text-[30px] md:text-[40px] mt-5">Join Our Mailing List</h2>
+      <div class="input mt-5">
+        <input type="text" placeholder="Enter your email" class="w-full md:w-[110%] h-[50px] rounded-lg bg-sky-50 text-black text-[18px] px-5" />
+      </div>
+      </div>
+
+    <!-- Right Section: Links -->
+      <div class="text w-full md:w-2/6 flex flex-wrap md:flex-nowrap gap-15">
+        <div class="text-left w-1/2 md:w-auto">
+          <h1 class="text-[30px] md:text-[40px]">Explore</h1>
+        <div class="link text-[18px] mt-5 space-y-2">
+          <a href="#"><p>Read</p></a>
+          <a href="#"><p>Watch</p></a>
+          <a href="#"><p>Shop</p></a>
+          <a href="#"><p>Studio</p></a>
+          <a href="#"><p>Portfolio</p></a>
+          <a href="#"><p>About</p></a>
+        </div>
+      </div>
+
+      <div class="text-left w-1/2 md:w-auto">
+        <h1 class="text-[30px] md:text-[40px]">Company</h1>
+        <div class="link text-[18px] mt-5 space-y-2">
+          <a href="#"><p>About Studio</p></a>
+          <a href="#"><p>Careers</p></a>
+          <a href="#"><p>Privacy Policy</p></a>
+          <a href="#"><p>Terms of Use</p></a>
+          <a href="#"><p>Contact Us</p></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Divider Line -->
+  <div class="line p-5">
+    <hr class="h-[3px] bg-white border-none mx-auto w-full" />
+  </div>
+
+  <!-- Social Icons -->
+  <div class="icon p-5 flex flex-wrap justify-center gap-5">
+    <!-- Facebook -->
+    <div class="group bg-amber-500 w-16 h-16 md:w-20 md:h-20 rounded-full flex items-center justify-center transition-all duration-300 ease-in-out hover:bg-blue-500 hover:bg-black hover:bg-yellow-500 hover:bg-red-500 hover:bg-orange-500 hover:bg-sky-500">
+      <a href="https://www.facebook.com" class="text-blue-400 group-hover:text-white transition-all duration-300 ease-in-out">
+        <i class="fab fa-facebook-f text-2xl md:text-3xl animate-none group-hover:animate-[spin_0.3s_linear_infinite]"></i>
+      </a>
+    </div>
+
+    <!-- Instagram -->
+    <div class="group bg-amber-500 w-16 h-16 md:w-20 md:h-20 rounded-full flex items-center justify-center transition-all duration-300 ease-in-out hover:bg-blue-500 hover:bg-black hover:bg-yellow-500 hover:bg-red-500 hover:bg-orange-500 hover:bg-sky-500">
+      <a href="https://www.instagram.com" class="text-pink-500 group-hover:text-white transition-all duration-300 ease-in-out">
+        <i class="fab fa-instagram text-2xl md:text-3xl animate-none group-hover:animate-[spin_0.3s_linear_infinite]"></i>
+      </a>
+    </div>    
+
+    <!-- Twitter -->
+    <div class="group bg-amber-500 w-16 h-16 md:w-20 md:h-20 rounded-full flex items-center justify-center transition-all duration-300 ease-in-out hover:bg-blue-500 hover:bg-black hover:bg-yellow-500 hover:bg-red-500 hover:bg-orange-500 hover:bg-sky-500">
+      <a href="https://twitter.com" class="text-blue-400 group-hover:text-white transition-all duration-300 ease-in-out">
+        <i class="fab fa-twitter text-2xl md:text-3xl animate-none group-hover:animate-[spin_0.3s_linear_infinite]"></i>
+      </a>
+    </div>    
+
+    <!-- YouTube -->
+    <div class="group bg-amber-500 w-16 h-16 md:w-20 md:h-20 rounded-full flex items-center justify-center transition-all duration-300 ease-in-out hover:bg-blue-500 hover:bg-black hover:bg-yellow-500 hover:bg-red-500 hover:bg-orange-500 hover:bg-sky-500">
+      <a href="https://www.youtube.com" class="text-red-600 group-hover:text-white transition-all duration-300 ease-in-out">
+        <i class="fab fa-youtube text-2xl md:text-3xl animate-none group-hover:animate-[spin_0.3s_linear_infinite]"></i>
+      </a>
+    </div>    
+  </div>
+</footer>
+    </section>
+  </main>
 </html>
